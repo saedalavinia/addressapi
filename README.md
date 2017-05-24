@@ -43,7 +43,7 @@ Notes:
 - It is up to the client to ensure correct format for address fields, e.g fromDate is earlier than toDate
 
 ### Returns a list of all members
-> URL : /persons
+> URL : /persons \n
 > Method : GET 
 > URL Params :  none
 > Data Params : none
