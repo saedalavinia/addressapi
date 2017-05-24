@@ -43,18 +43,19 @@ Notes:
 - It is up to the client to ensure correct format for address fields, e.g fromDate is earlier than toDate
 
 ### Returns a list of all members
-> URL : /persons \n
-> Method : GET 
-> URL Params :  none
-> Data Params : none
-> Response Codes: Success (200 OK), Bad Request (400)
+> URL : /persons    
+> Method : GET     
+> URL Params :  none    
+> Data Params : none    
+> Response Codes: Success (200 OK), Bad Request (400)    
 
+***
 
 #### Adds a new member 
-> URL : /persons
-> Method : POST 
-> URL Params :  none
-> Data Params : 
+> URL : /persons    
+> Method : POST     
+> URL Params :  none    
+> Data Params :     
 ```json
  {  
     "sin": [9-digit integer],
@@ -62,30 +63,31 @@ Notes:
     "lastName": [String] 
 } 
 ```
-> Response Codes: Success (200 OK), Bad Request (400)
+> Response Codes: Success (200 OK), Bad Request (400)    
 
+***
 
 ### Returns a signle member
-> URL : /persons/{sin}
-> Method : GET 
-> URL Params :  sin: [9-digit integer]
-> Data Params : none
-> Response Codes: Success (200 OK), Bad Request (400)
-
+> URL : /persons/{sin}    
+> Method : GET      
+> URL Params :  sin: [9-digit integer]    
+> Data Params : none    
+> Response Codes: Success (200 OK), Bad Request (400)    
+***
 
 ### Returns a list of addresses for a particular member
-> URL : /persons/{sin}/addresses
-> Method : GET 
-> URL Params :  sin: [9-digit integer]
-> Data Params : none
-> Response Codes: Success (200 OK), Bad Request (400)
+> URL : /persons/{sin}/addresses    
+> Method : GET     
+> URL Params :  sin: [9-digit integer]    
+> Data Params : none    
+> Response Codes: Success (200 OK), Bad Request (400)    
 
-
+***
 ### adds a new address for a particular member
-> URL : /persons/{sin}/addresses
-> Method : GET 
-> URL Params :  sin: [9-digit integer]
-> Data Params : 
+> URL : /persons/{sin}/addresses    
+> Method : GET     
+> URL Params :  sin: [9-digit integer]    
+> Data Params :   
 ```json
 {
     "streetNumber": [Integer],
@@ -98,7 +100,7 @@ Notes:
     "dateTo": [SQL Date Object]
   },
  ``` 
-> Response Codes: Success (200 OK), Bad Request (400)
+> Response Codes: Success (200 OK), Bad Request (400)   
 
-
+***
 
